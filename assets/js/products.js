@@ -19,7 +19,7 @@ async function loadProducts() {
   try {
     loading.style.display = "block"
 
-    const response = await fetch("api/products.php")
+    const response = await fetch("http://localhost:8080/Test/api/products.php")
     allProducts = await response.json()
     filteredProducts = [...allProducts]
 
@@ -145,7 +145,7 @@ function filterProducts() {
 // View product details in modal
 async function viewProductDetails(productId) {
   try {
-    const response = await fetch(`api/products.php?id=${productId}`)
+    const response = await fetch(`http://localhost:8080/Test/api/products.php?id=${productId}`)
     const product = await response.json()
 
     // Populate modal
