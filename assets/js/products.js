@@ -19,7 +19,7 @@ async function loadProducts() {
   try {
     loading.style.display = "block"
 
-    const response = await fetch("http://192.168.1.10:8080/Test/api/products.php")
+    const response = await fetch("http://localhost:8080/Test/api/products.php")
     allProducts = await response.json()
     filteredProducts = [...allProducts]
 
