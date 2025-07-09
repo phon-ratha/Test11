@@ -5,10 +5,6 @@ let filteredProducts = []
 let currentPage = 1
 const productsPerPage = 12
 const bootstrap = window.bootstrap // Declare bootstrap variable
-const showNotification = (message, type) => {
-  // Simple notification function implementation
-  alert(`${type.toUpperCase()}: ${message}`)
-}
 
 document.addEventListener("DOMContentLoaded", () => {
   loadProducts()

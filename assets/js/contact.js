@@ -5,17 +5,6 @@ function validateEmail(email) {
   return re.test(email)
 }
 
-function showNotification(message, type) {
-  const notification = document.createElement("div")
-  notification.classList.add("notification", type)
-  notification.innerHTML = message
-  document.body.appendChild(notification)
-
-  setTimeout(() => {
-    document.body.removeChild(notification)
-  }, 5000)
-}
-
 document.addEventListener("DOMContentLoaded", () => {
   initializeContactForm()
 })

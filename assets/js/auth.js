@@ -206,15 +206,3 @@ async function handleRegister(e) {
     submitBtn.disabled = false
   }
 }
-
-// Notification function
-function showNotification(message, type) {
-  const notification = document.createElement("div")
-  notification.classList.add("notification", type)
-  notification.innerHTML = message
-  document.body.appendChild(notification)
-
-  setTimeout(() => {
-    document.body.removeChild(notification)
-  }, 3000)
-}
