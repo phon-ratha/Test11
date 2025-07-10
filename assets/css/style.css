@@ -547,3 +547,41 @@ body {
 ::-webkit-scrollbar-thumb:hover {
   background: var(--secondary-color);
 }
+
+
+
+
+.team-image {
+    position: relative; /* Enable absolute positioning of overlay */
+}
+
+.team-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    padding: 10px; /* Padding around the icons */
+    display: flex;
+    justify-content: center; /* Center the icons */
+    align-items: center; /* Center vertically */
+}
+
+.social-links a {
+    color: white; /* Icon color */
+    margin: 0 10px; /* Spacing between icons */
+    font-size: 1.5em; /* Icon size */
+    transition: color 0.3s; /* Smooth transition for hover effect */
+}
+
+.social-links a:hover {
+    color: #ccc; /* Change color on hover */
+}
+
+
+
+
+
+
+
+
